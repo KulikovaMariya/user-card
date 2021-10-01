@@ -78,7 +78,7 @@ section {
     border-radius: 15px 15px 0 0;
 }
 
-.avatar {
+div.avatar {
     height: 96px;
     width: 96px;
 
@@ -87,6 +87,11 @@ section {
     top: calc(50% - 96px/2 - 47px);
     border-radius: 50%;
     border: 5px solid #FFFFFF;
+    background-color: #FFFFFF;
+    background-image: url("../img/avatar.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .name-container {
