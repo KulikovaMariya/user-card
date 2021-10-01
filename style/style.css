@@ -1,15 +1,15 @@
 body {
+    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
     background-color: #19A1AE;
+    overflow: hidden;
 }
 
 main {
-
-    /*height: 720px;*/
-    /*width: 1440px;*/
-    /*overflow: hidden;*/
-    position: relative;
-    /*display: flex;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle {
@@ -21,27 +21,31 @@ main {
 
     background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
     mix-blend-mode: normal;
+
+    z-index: -1;
 }
 
 .circle.left {
-    left: -204px;
-    top: -669px;
+    left: -10%;
+    top: -40%;
     transform: rotate(-135deg);
     opacity: 0.5;
 }
 
 .circle.right {
-    left: 1180px;
-    top: 554px;
+    left: 50%;
+    top: 50%;
 
     mix-blend-mode: normal;
     opacity: 0.25;
     transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
 }
 
+section {
+    width: 350px;
+ }
+
 .card-container {
-    display: inline-block;
-    vertical-align: middle;
     height: 374px;
     width: 350px;
     border-radius: 15px;
@@ -114,8 +118,7 @@ main {
 }
 
 dl {
-    margin: 0;
-    margin-top: 24px;
+    margin: 24px 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
