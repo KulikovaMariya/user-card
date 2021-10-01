@@ -157,3 +157,14 @@ dt:nth-of-type(3) {
     grid-column: 3/3;
     grid-row: 2/2;
 }
+
+@media screen and (max-width: 375px) {
+    section,
+    .card-container {
+        width: 326px;
+    }
+    .circle {
+        width: 622px;
+        height: 622px;
+    }
+}
