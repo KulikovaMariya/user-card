@@ -1,12 +1,12 @@
 body {
-    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
     background-color: #19A1AE;
-    overflow: hidden;
 }
 
 main {
-    height: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,6 @@ dt:nth-of-type(3) {
 }
 
 @media screen and (max-width: 375px) {
-    section,
     .card-container {
         width: 326px;
     }
