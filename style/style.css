@@ -90,7 +90,7 @@ div.avatar {
     background-color: #FFFFFF;
     background-image: url("../img/avatar.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
